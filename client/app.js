@@ -1,5 +1,6 @@
+// const http = require("http").createServer();
 // const socket = io("ws://localhost:8080");
-const socket = io("ws://mouse-qg62lv36ta-uc.a.run.app");
+const socket = io("ws://mouse-qg62lv36ta-ew.a.run.app");
 const el = document.getElementById("message");
 let users = new Set();
 
@@ -116,7 +117,7 @@ const drawMouse = (id, clients) => {
   div.appendChild(piv);
 
   const mouse = document.createElement("img");
-  mouse.src = "./mouse.png";
+  mouse.src = "./client/mouse.png";
   mouse.width = 50;
   mouse.setAttribute(
     "style",
