@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:8081");
+const socket = io("ws://localhost:8080");
 const el = document.getElementById("message");
 let users = new Set();
 
