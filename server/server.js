@@ -1,4 +1,10 @@
-const http = require("http").createServer();
+const fs = require('fs')
+const requestListener = function (req, res) {
+  res.writeHead(200, { 'content-type': 'text/html' })
+  fs.createReadStream('../index.html').pipe(res)
+};
+
+const http = require("http").createServer(requestListener);
 const io = require("socket.io")(http, {
   cors: { origin: "*" },
 });
