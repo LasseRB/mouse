@@ -1,4 +1,5 @@
-const socket = io("ws://localhost:8080");
+// const socket = io("ws://localhost:8080");
+const socket = io("ws://mouse-qg62lv36ta-uc.a.run.app");
 const el = document.getElementById("message");
 let users = new Set();
 
