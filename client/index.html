@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse magic</title>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src="./app.js"></script>
+    
+</head>
+<body>
+    <h3 id="username"></h3>
+    <div class='clients'></div>
+    <!-- <img id="mouse" src="./mouse.png" alt="" srcset="" width="50px"> -->
+    <style>
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .clients {
+            position:absolute;
+        }
+        h3{
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</body>
+</html>
